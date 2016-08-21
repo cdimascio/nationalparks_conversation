@@ -1,0 +1,24 @@
+{
+  "name": "ballparks_conversation",
+  "version": "0.1.0",
+  "description": "Conversations about ballparks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdimascio/ballparks_conversation.git"
+  },
+  "keywords": [
+    "ballparks",
+    "conversation",
+    "watson"
+  ],
+  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdimascio/ballparks_conversation/issues"
+  },
+  "homepage": "https://github.com/cdimascio/ballparks_conversation#readme"
+}
