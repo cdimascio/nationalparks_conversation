@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  /* flex: 1; would be enough but it looks bad in IE */
+  flex: 1 0 auto;
+}
+
+/* Unimportant part */
+body {
+  font: 16px/1.5 sans-serif;
+}
+p {
+  margin-bottom: 1em;
+}
+header, section, footer {
+  padding: 2em;
+  color: white;
+}
+header {
+  background-color: #85144B;
+}
+section {
+  background-color: #3D9970;
+}
+footer {
+  background-color: #001F3F;
+}
+
+.user-msg,
+.watson-msg {
+  font-size: 11pt;
+  color: #000;
+  background-color: #fef9fb;
+  border-radius: 20px;
+  margin: 0 20px 10px;
+  padding: 10px 15px;
+  position: relative;
+  clear: both;
+  line-height: 15pt;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  position: relative;
+}
+
+.user-msg {
+  border-bottom-right-radius: 0;
+  float: right;
+}
+
+.user-msg:after {
+   border-color: transparent #fef9fb transparent transparent;
+   border-style: solid;
+   border-width: 0 15px 8px 0;
+   bottom: -7px;
+   content: ' ';
+   height: 0;
+   position: absolute;
+   right: 0;
+   width: 0;
+ }
+
+.watson-msg {
+  border-bottom-left-radius: 0;
+  float: left;
+  background-color: #c0cce3;
+}
+
+.watson-msg:after {
+   border-color: transparent transparent transparent #c0cce3;
+   border-style: solid;
+   border-width: 0 0 8px 15px;
+   bottom: -7px;
+   content: ' ';
+   height: 0;
+   position: absolute;
+   left: 0;
+   width: 0;
+ }
+
+input {
+  flex: 1;
+  width: 100%;
+  font-size: .75em;
+  background-color: transparent;
+  color: white;
+  border: solid #1b4e7e 1px;
+  border-radius: 20px;
+  padding: 8px 10px;
+}

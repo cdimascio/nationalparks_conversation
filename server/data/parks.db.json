@@ -1,0 +1,284 @@
+[
+  {
+    "id": "1",
+    "entity_id": "at&t_park",
+    "name": "AT&T Park",
+    "wikiName": "AT&T_Park",
+    "lat": 37.77861,
+    "long": -122.38917,
+    "team": "San Francisco Giants",
+    "image": {
+      "thumb": "http://wonderfest.org/wp-content/uploads/2012/10/att-park.jpg"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Citizens Bank Park",
+    "entity_id": "citizens_bank_park",
+    "wikiName": "Citizens_Bank_Park",
+    "lat": 39.90583,
+    "long": -75.16639,
+    "team": "Philadelphia Phillies"
+  },
+  {
+    "id": "3",
+    "entity_id": "busch_stadium",
+    "name": "Busch Stadium",
+    "wikiName": "Busch_Stadium",
+    "lat": 38.6225,
+    "long": -90.19306,
+    "team": "St. Louis Cardinals"
+  },
+  {
+    "id": "4",
+    "entity_id": "citi_field",
+    "name": "Citi Field",
+    "wikiName": "Citi_Field",
+    "lat": 40.75694,
+    "long": -73.84583,
+    "team": "New York Mets"
+  },
+  {
+    "id": "5",
+    "entity_id": "angel_stadium",
+    "name": "Angel Stadium of Anaheim",
+    "wikiName": "Angel_Stadium",
+    "lat": 33.80028,
+    "long": -117.88278,
+    "team": "Los Angeles Angels of Anaheim"
+  },
+  {
+    "id": "6",
+    "entity_id": "dodger_stadium",
+    "name": "Dodger Stadium",
+    "wikiName": "Dodger_Stadium",
+    "lat": 34.07361,
+    "long": -118.24,
+    "team": "Los Angeles Dodgers"
+  },
+  {
+    "id": "7",
+    "entity_id": "globe_life_park",
+    "name": "Globe Life Park in Arlington",
+    "wikiName": "Globe_Life_Park_in_Arlington",
+    "lat": 32.75139,
+    "long": -97.08278,
+    "team": "Texas Rangers"
+  },
+  {
+    "id": "8",
+    "entity_id": "comerica_park",
+    "name": "Comerica Park",
+    "wikiName": "Comerica_Park",
+    "lat": 42.33917,
+    "long": -83.04861,
+    "team": "Detroit Tigers"
+  },
+  {
+    "id": "9",
+    "entity_id": "coors_field",
+    "name": "Coors Field",
+    "wikiName": "Coors_Field",
+    "lat": 39.75611,
+    "long": -104.99417,
+    "team": "Colorado Rockies"
+  },
+  {
+    "id": "10",
+    "entity_id": "kauffman_stadium",
+    "name": "Kauffman Stadium",
+    "wikiName": "Kauffman_Stadium",
+    "lat": 39.05139,
+    "long": -94.48056,
+    "team": "Kansas City Royals"
+  },
+  {
+    "id": "11",
+    "entity_id": "miller_park",
+    "name": "Miller Park",
+    "wikiName": "Miller_Park",
+    "lat": 43.02833,
+    "long": -87.97111,
+    "team": "Milwaukee Brewers"
+  },
+  {
+    "id": "12",
+    "entity_id": "great_american_ball_park",
+    "name": "Great American Ball Park",
+    "wikiName": "Great_American_Ball_Park",
+    "lat": 39.0975,
+    "long": -84.50667,
+    "team": "Major League Baseball"
+  },
+  {
+    "id": "13",
+    "entity_id": "nationals_park",
+    "name": "Nationals Park",
+    "wikiName": "Nationals_Park",
+    "lat": 38.87278,
+    "long": -77.0075,
+    "team": "Washington Nationals"
+  },
+  {
+    "id": "14",
+    "entity_id": "fenway_park",
+    "name": "Fenway Park",
+    "wikiName": "Fenway_Park",
+    "lat": 42.34639,
+    "long": -71.0975,
+    "team": "Boston Red Sox"
+  },
+  {
+    "id": "15",
+    "entity_id": "coliseum",
+    "name": "O.co Coliseum",
+    "wikiName": "O.co_Coliseum",
+    "lat": 37.75167,
+    "long": -122.20056,
+    "team": "Oakland Athletics"
+  },
+  {
+    "id": "16",
+    "entity_id": "minute_maid_park",
+    "name": "Minute Maid Park",
+    "wikiName": "Minute_Maid_Park",
+    "lat": 29.75694,
+    "long": -95.35556,
+    "team": "Houston Astros"
+  },
+  {
+    "id": "17",
+    "entity_id": "petco_park",
+    "name": "Petco Park",
+    "wikiName": "Petco_Park",
+    "lat": 32.7073,
+    "long": -117.1566,
+    "team": "San Diego Padres"
+  },
+  {
+    "id": "18",
+    "entity_id": "progressive_field",
+    "name": "Progressive Field",
+    "wikiName": "Progressive_Field",
+    "lat": 41.49583,
+    "long": -81.68528,
+    "team": "Cleveland Indians"
+  },
+  {
+    "id": "19",
+    "entity_id": "chase_field",
+    "name": "Chase Field",
+    "wikiName": "Chase_Field",
+    "lat": 33.44528,
+    "long": -112.06694,
+    "team": "Arizona Diamondbacks"
+  },
+  {
+    "id": "20",
+    "entity_id": "safeco_field",
+    "name": "Safeco Field",
+    "wikiName": "Safeco_Field",
+    "lat": 47.59139,
+    "long": -122.3325,
+    "team": "Seattle Mariners"
+  },
+  {
+    "id": "21",
+    "entity_id": "rogers_centre",
+    "name": "Rogers Centre",
+    "wikiName": "Rogers_Centre",
+    "lat": 43.64139,
+    "long": -79.38917,
+    "team": "Toronto Blue Jays"
+  },
+  {
+    "id": "22",
+    "entity_id": "tropicana_field",
+    "name": "Tropicana Field",
+    "wikiName": "Tropicana_Field",
+    "lat": 27.76833,
+    "long": -82.65333,
+    "team": "Tampa Bay Rays"
+  },
+  {
+    "id": "23",
+    "entity_id": "turner_field",
+    "name": "Turner Field",
+    "wikiName": "Turner_Field",
+    "lat": 33.73528,
+    "long": -84.38944,
+    "team": "Atlanta Braves"
+  },
+  {
+    "id": "24",
+    "entity_id": "pnc_park",
+    "name": "PNC Park",
+    "wikiName": "PNC_Park",
+    "lat": 40.44694,
+    "long": -80.00583,
+    "team": "Pittsburgh Pirates"
+  },
+  {
+    "id": "25",
+    "entity_id": "target_field",
+    "name": "Target Field",
+    "wikiName": "Target_Field",
+    "lat": 44.98167,
+    "long": -93.27833,
+    "team": "Minnesota Twins"
+  },
+  {
+    "id": "26",
+    "entity_id": "us_cellular_field",
+    "name": "U.S. Cellular Field",
+    "wikiName": "U.S._Cellular_Field",
+    "lat": 41.83,
+    "long": -87.63389,
+    "team": "Chicago White Sox"
+  },
+  {
+    "id": "27",
+    "entity_id": "yankee_stadium",
+    "name": "Yankee Stadium",
+    "wikiName": "Yankee_Stadium",
+    "lat": 40.82917,
+    "long": -73.92639,
+    "team": "New York Yankees"
+  },
+  {
+    "id": "28",
+    "entity_id": "sydney_cricket_ground",
+    "name": "Sydney Cricket Ground",
+    "wikiName": "Sydney_Cricket_Ground",
+    "lat": -33.89167,
+    "long": 151.22472,
+    "team": ""
+  },
+  {
+    "id": "29",
+    "entity_id": "wrigley_field",
+    "name": "Wrigley Field",
+    "wikiName": "Wrigley_Field",
+    "lat": 41.94833,
+    "long": -87.65556,
+    "team": "Chicago Cubs"
+  },
+  {
+    "id": "30",
+    "entity_id": "marlins_park",
+    "name": "Marlins Park",
+    "wikiName": "Marlins_Park",
+    "lat": 25.77806,
+    "long": -80.21972,
+    "team": "Miami Marlins"
+  },
+  {
+    "id": "31",
+    "entity_id": "camden_yards",
+    "name": "Oriole Park at Camden Yards",
+    "wikiName": "Oriole_Park_at_Camden_Yards",
+    "lat": 39.28389,
+    "long": -76.62167,
+    "team": "Baltimore Orioles"
+  }
+]
