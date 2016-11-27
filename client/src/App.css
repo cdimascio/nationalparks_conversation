@@ -29,7 +29,7 @@ p {
   margin-bottom: 1em;
 }
 header, section, footer {
-  padding: 2em;
+  padding: 2em .5em;
   color: white;
 }
 header {
@@ -48,7 +48,7 @@ footer {
   color: #000;
   background-color: #fef9fb;
   border-radius: 20px;
-  margin: 0 20px 10px;
+  margin: 0 5px 10px;
   padding: 10px 15px;
   position: relative;
   clear: both;
@@ -101,6 +101,7 @@ footer {
  }
 
 input {
+  box-sizing:border-box;
   flex: 1;
   width: 100%;
   font-size: .75em;

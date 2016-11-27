@@ -1,9 +1,9 @@
 import ParksDb from '../../data/parks.db.json';
 
-class Parks {
+class ParksService {
   byName(name) {
     for (let i=0; i < ParksDb.length; i++) {
-      if (ParksDb[i].name.toLowerCase() === name) {
+      if (ParksDb[i].name.toLowerCase() === name.toLowerCase().trim()) {
         return ParksDb[i];
       }
     }
@@ -14,3 +14,5 @@ class Parks {
     return ParksDb;
   }
 }
+
+export default new ParksService();
