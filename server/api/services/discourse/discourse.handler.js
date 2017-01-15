@@ -30,8 +30,9 @@ class Handlers {
   tellMeAbout() {
     const park = this._c.findEntity('NationalParks');
     if (park) {
-      this._r.context.park = ParksService.byName(park.value);
+      this._r.output.park = ParksService.byName(park.value);
     }
+
     return this;
   }
 
@@ -45,7 +46,7 @@ class Handlers {
     const park = this._c.findEntity('NationalParks');
     if (park) {
       if (!this._r.context.park || !this._r.context.parks.includes(park.name)) {
-        this._r.context.park = ParksService.byName(park.value);
+        this._r.context.park = park.value;
       }
     }
     return this;

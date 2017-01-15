@@ -7,8 +7,8 @@ export const AnimalCard = ({
 }) => {
   return (
     <div>
-      <div>{animal.name}</div>
-      <div>{animal.description}</div>
+      <div><h3>{animal.name}</h3></div>
+      <div><p>{animal.description}</p></div>
       <div>
         <img className="park-image" src={animal.images[0]} role="presentation"/>
       </div>

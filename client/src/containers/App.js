@@ -42,13 +42,13 @@ class App extends Component {
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            <div className="watson-msg"><ParkCard park={exchange.context.park}/></div>
+            <div className="watson-msg"><ParkCard park={exchange.output.park}/></div>
           </div>);
       case 'animals':
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            <div className="watson-msg"><AnimalsCard park={exchange.context.park}/></div>
+            <div className="watson-msg"><AnimalsCard park={exchange.output.park}/></div>
           </div>);
       default:
         this.renderText(exchange,key);
