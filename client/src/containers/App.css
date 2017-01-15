@@ -1,9 +1,12 @@
 html {
   height: 100%;
+    /*width: 100%;*/
 }
 
 body {
   height: 100%;
+  width: 100vw;
+  /*width: 100%;*/
 }
 
 #root {
@@ -23,36 +26,41 @@ section {
 
 /* Unimportant part */
 body {
-  font: 16px/1.5 sans-serif;
+ font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
+ font-size: 12px;
 }
 p {
   margin-bottom: 1em;
 }
 header, section, footer {
-  padding: 2em .5em;
+  padding: 1em .5em;
   color: white;
 }
 header {
-  background-color: #85144B;
+  background-color: #323232;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 200;
 }
 section {
-  background-color: #3D9970;
+  background-color: #ffffff;
 }
 footer {
-  background-color: #001F3F;
+  background-color: #f4f4f4;
+  color: #562f72;
 }
 
 .user-msg,
 .watson-msg {
   font-size: 11pt;
-  color: #000;
-  background-color: #fef9fb;
+  color: #323232;
+  background-color: #00b4a0; /*#fef9fb;*/
   border-radius: 20px;
   margin: 0 5px 10px;
   padding: 10px 15px;
   position: relative;
   clear: both;
-  line-height: 15pt;
+  line-height: 1em;
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
@@ -66,12 +74,13 @@ footer {
 }
 
 .user-msg {
+  color: #fff;
   border-bottom-right-radius: 0;
   float: right;
 }
 
 .user-msg:after {
-   border-color: transparent #fef9fb transparent transparent;
+   border-color: transparent #00b4a0 transparent transparent;
    border-style: solid;
    border-width: 0 15px 8px 0;
    bottom: -7px;
@@ -85,11 +94,11 @@ footer {
 .watson-msg {
   border-bottom-left-radius: 0;
   float: left;
-  background-color: #c0cce3;
+  background-color: #e7e9ec;
 }
 
 .watson-msg:after {
-   border-color: transparent transparent transparent #c0cce3;
+   border-color: transparent transparent transparent #e7e9ec;
    border-style: solid;
    border-width: 0 0 8px 15px;
    bottom: -7px;
@@ -104,10 +113,10 @@ input {
   box-sizing:border-box;
   flex: 1;
   width: 100%;
-  font-size: .75em;
+  font-size: 1em;
   background-color: transparent;
-  color: white;
-  border: solid #1b4e7e 1px;
+  color: #323232;
+  border: solid #562f72 1px;
   border-radius: 20px;
   padding: 8px 10px;
 }

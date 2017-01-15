@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Conversation from './services/conversation';
-import ParkCard from './ParkCard';
-import AnimalCard from './AnimalsCard';
+import Conversation from '../services/conversation';
+import ParkCard from '../components/ParkCard';
+import AnimalsCard from '../components/AnimalsCard';
 import './App.css';
 
 class App extends Component {
@@ -47,9 +47,9 @@ class App extends Component {
       case 'animals':
         return (
           <div key={key} className="exchange">
-          { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-          <div className="watson-msg"><AnimalCard park={exchange.context.park}/></div>
-        </div>);
+            { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
+            <div className="watson-msg"><AnimalsCard park={exchange.context.park}/></div>
+          </div>);
       default:
         this.renderText(exchange,key);
     }
@@ -64,7 +64,7 @@ class App extends Component {
   }
 
   renderInputView() {
-    return <input type="text" autoComplete="off" placeholder='Engage with Watson'
+    return <input type="text" autoComplete="off" placeholder='Type something'
                   onKeyUp={e => this.onInputKeyUp(e)}/>;
   }
 

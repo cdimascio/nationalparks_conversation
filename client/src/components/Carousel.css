@@ -1,0 +1,27 @@
+.carousel-container {
+}
+.carousel-content {
+    /*display: flex;*/
+    /*flex: 1;*/
+    /*flex-direction: row;*/
+    margin: 0;
+    padding: 0;
+    /*overflow: scroll;*/
+}
+.carousel-content li {
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+}
+.active li {
+    display: inline;
+    list-style: none;
+}
+.active li.current {
+}
+
+.item {
+    min-width: 200px;
+}
