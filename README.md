@@ -1,15 +1,20 @@
 # nationalparks-conversation
  
-The repo contains samples project code demonstrating the Watson Conversation service
+The repo contains code demonstrating the Watson Conversation service
 
 
 ![](https://github.com/cdimascio/nationalparks_conversation/raw/master/.assets/sshot.png)
 
-## Setup
+## Prequisities
 
-Create a `.env` file in the project root
+
+1. Clone this repo
+2. Create a Watson Conversation Service on Bluemix
+3. Create a new conversation workspace by importing `conversation_workspace.json' form the project root
+4. Create a `.env` file in the project root
 
 e.g.
+
 ```
 APP_ID=parks-conversation
 PORT=3004
@@ -24,7 +29,10 @@ WATSON_CONVERSATION_PASSWORD=<PASSWORD>
 WATSON_CONVERSATION_WORKSPACE_ID=<WORKSPACE>
 ```
 
-Install the client and server dependencies
+## Setup
+
+Install client and server dependencies
+
 ### Server
 - `npm install`
 
