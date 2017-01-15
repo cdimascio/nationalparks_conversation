@@ -38,7 +38,8 @@ class Handlers {
 
   initContext() {
     // Seed 'context' with the list of known Nation Parks
-    if (!this._r.context.parks || this._r.context.parks.length === 0) {
+    // if (!this._r.context.parks || this._r.context.parks.length === 0) {
+    if (this._r.context.system.dialog_turn_counter === 1) {
       this._r.context.parks = ParksService.all().map(p => p.name);
     }
 
