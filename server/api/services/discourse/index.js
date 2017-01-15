@@ -1,20 +1,15 @@
 import Conversation from '../conversation';
-import DiscourseHandler from './discourse.handler';
+import handleDiscourse from './discourse.handler';
 
 class DiscourseService {
-  constructor() {
-    this._conversation = Conversation;
-    this._discourseHandler = DiscourseHandler;
-  }
-
   message({
     input,
     context
   }) {
-    return this._conversation
+    return Conversation
       .message({input, context})
-      .map(result => this._discourseHandler.handle(result));
+      .map(handleDiscourse);
   }
 }
-
-export default new DiscourseService();
+const service = new DiscourseService();
+export default service;

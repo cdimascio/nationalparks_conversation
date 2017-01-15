@@ -1,62 +1,38 @@
 import ParksService from '../parks';
-import Conditions from './conditions';
 
-class DiscourseHandler {
-  handle(r) {
-    const c = new Conditions(r.intents, r.entities);
-    const h = new Handlers(c,r).initContext();
+export default function discourseHandler(r) {
+  updateContext(r);
+  if (r.intents.length === 0) {
+    return r;
+  }
 
-    switch (c.intent.intent) {
-      case 'listparks':
-        return h.listParks().response();
-      case 'tellmeabout':
-        return h.tellMeAbout().response();
-      default:
-        return h.response();
-    }
+  switch (r.intents[0].intent) {
+    case 'tellmeabout':
+      return tellMeAboutHandler(r);
+    default:
+      return r;
   }
 }
 
-class Handlers {
-  constructor(conditions, response) {
-    this._c = conditions;
-    this._r = response;
+function tellMeAboutHandler(r) {
+  const park = r.context.park;
+  if (park) {
+    // include park data in the response
+    r.output.park = ParksService.byName(park);
   }
-
-  listParks() {
-    return this;
-  }
-
-  tellMeAbout() {
-    const park = this._c.findEntity('NationalParks');
-    if (park) {
-      this._r.output.park = ParksService.byName(park.value);
-    }
-
-    return this;
-  }
-
-  initContext() {
-    // Seed 'context' with the list of known Nation Parks
-    // if (!this._r.context.parks || this._r.context.parks.length === 0) {
-    if (this._r.context.system.dialog_turn_counter === 1) {
-      this._r.context.parks = ParksService.all().map(p => p.name);
-    }
-
-    // Seed 'context with mentioned park
-    const park = this._c.findEntity('NationalParks');
-    if (park) {
-      if (!this._r.context.park || !this._r.context.parks.includes(park.name)) {
-        this._r.context.park = park.value;
-      }
-    }
-    return this;
-  }
-
-  response() {
-    return this._r;
-  }
+  return r;
 }
 
+function updateContext(r) {
+  // Seed 'context' with the list of known Nation Parks
+  if (r.context.system.dialog_turn_counter === 1) {
+    r.context.parks = ParksService.all().map(p => p.name);
+  }
 
-export default new DiscourseHandler();
+  // Seed 'context with mentioned park
+  const park = r.entities.find(e => e.entity === 'NationalParks');
+  if (park) {
+    r.context.park = park.value;
+  }
+  return r;
+}

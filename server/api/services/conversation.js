@@ -40,5 +40,5 @@ class Conversation {
     };
   }
 }
-
-export default new Conversation();
+const instance = new Conversation();
+export default instance;

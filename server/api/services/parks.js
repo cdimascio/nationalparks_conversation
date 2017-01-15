@@ -1,4 +1,4 @@
-import ParksDb from '../../data/parks.db.json';
+const ParksDb = require('../../data/parks.db.json');
 
 class ParksService {
   byName(name) {
