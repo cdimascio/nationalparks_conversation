@@ -53,6 +53,7 @@ header, section, footer {
 }
 
 header {
+  text-align: center;
   background-color: #323232;
   color: #ffffff;
   font-size: 36px;
@@ -142,13 +143,11 @@ input {
 }
 
 @media (min-width: 600px) {
-    body {
-        background-color: white;
-    }
+
     #root {
         height: 100%;
         border-left: 1px dashed rgba(0,0,0,.2);
-        border-right: 1px solid rgba(0,0,0,.2);
+        border-right: 1px dashed rgba(0,0,0,.2);
         margin-left: auto;
         max-width: 500px;
         margin-right: auto;

@@ -52,3 +52,10 @@ Install client and server dependencies
 - `npm start`
 - Navigate to http://localhost:3004
 
+## Deploy to Bluemix
+Follow the first 3 steps in the "Build / Run (Production)" section above, then run:
+
+- `cf push nationalparks`
+
+
+
