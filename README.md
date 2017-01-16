@@ -40,7 +40,15 @@ Install client and server dependencies
 - `cd client`
 - `npm install`
 
-## Run
+## Build / Run (Development)
 - Start the server `npm start`
 - Start the client `cd client && npm start`
-- Navigate to http://localhost:3000
+- Navigate to http://localhost:3004
+
+## Build / Run (Production)
+- `cd client`
+- `npm run build`
+- `cd ..`
+- `npm start`
+- Navigate to http://localhost:3004
+
