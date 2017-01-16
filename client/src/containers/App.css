@@ -143,12 +143,12 @@ input {
 
 @media (min-width: 600px) {
     body {
-        background-color: #f4f4f4;
+        background-color: white;
     }
     #root {
         height: 100%;
-        border-left: 2px solid white;
-        border-right: 2px solid white;
+        border-left: 1px dashed rgba(0,0,0,.2);
+        border-right: 1px solid rgba(0,0,0,.2);
         margin-left: auto;
         max-width: 500px;
         margin-right: auto;
