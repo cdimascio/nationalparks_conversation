@@ -1,12 +1,10 @@
 html {
   height: 100%;
-    /*width: 100%;*/
 }
 
 body {
   height: 100%;
   width: 100vw;
-  /*width: 100%;*/
 }
 
 h3 {
@@ -44,22 +42,29 @@ body {
  font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
  font-size: 12px;
 }
+
 p {
   margin-bottom: 1em;
 }
+
 header, section, footer {
   padding: 1em .5em;
   color: white;
 }
+
 header {
   background-color: #323232;
   color: #ffffff;
   font-size: 36px;
   font-weight: 200;
 }
+
 section {
+    overflow: auto;
+    height: 70vh;
   background-color: #ffffff;
 }
+
 footer {
   background-color: #f4f4f4;
   color: #562f72;
@@ -134,4 +139,18 @@ input {
   border: solid #562f72 1px;
   border-radius: 20px;
   padding: 8px 10px;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: #f4f4f4;
+    }
+    #root {
+        height: 100%;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        margin-left: auto;
+        max-width: 500px;
+        margin-right: auto;
+    }
 }
