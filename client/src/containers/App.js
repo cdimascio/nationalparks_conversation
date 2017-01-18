@@ -23,8 +23,6 @@ class App extends Component {
         <header>National Parks</header>
         <section ref="main">
           { this.state.conversationHistory.map((h,i) => this.renderExchange(h, i)) }
-          <div className="exchange" style={{  height: '1px'}}>
-          </div>
         </section>
         <footer>
         { this.renderInputView()}
