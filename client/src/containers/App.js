@@ -78,7 +78,6 @@ class App extends Component {
   onInputKeyUp(e) {
     switch (e.which) {
       case 0x0d:
-        console.log('send message', e);
         this.sendMessage(e.target.value);
         e.target.value = '';
         break;
@@ -113,7 +112,10 @@ class App extends Component {
     const node = this.refs.main;
     scrollTo(node, node.scrollHeight, 300);
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 }
 
 export default App;
