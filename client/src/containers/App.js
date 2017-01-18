@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="app">
         <header>National Parks</header>
-        <section>
+        <section ref="main">
           { this.state.conversationHistory.map((h,i) => this.renderExchange(h, i)) }
         </section>
         <footer>
@@ -96,6 +96,22 @@ class App extends Component {
         conversationHistory: this.state.conversationHistory
       })
     });
+  }
+
+  componentDidUpdate() {
+    const scrollTo = (element, to, duration) => {
+      if (duration <= 0) return;
+      const difference = to - element.scrollTop;
+      const perTick = difference / duration * 10;
+
+      setTimeout(function () {
+        element.scrollTop += perTick;
+        if (element.scrollTop === to) return;
+        scrollTo(element, to, duration - 10);
+      }, 10);
+    };
+    const node = this.refs.main;
+    scrollTo(node, node.scrollHeight, 300);
   }
 
 }
