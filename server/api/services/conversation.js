@@ -1,4 +1,4 @@
-import watson from 'watson-developer-cloud';
+const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 import Rx from 'rx';
 
 class Conversation {
@@ -25,15 +25,14 @@ class Conversation {
     if (!process.env.WATSON_CONVERSATION_USERNAME) throw new Error('no username present');
     if (!process.env.WATSON_CONVERSATION_PASSWORD) throw new Error('no password present');
     if (!process.env.WATSON_CONVERSATION_WORKSPACE_ID) throw new Error('no workspace id present');
-    if (!process.env.WATSON_CONVERSATION_VERSION_DATE) throw new Error('no version date present');
     if (!process.env.WATSON_CONVERSATION_API_ROOT) throw new Error('no version date present');
 
     return {
-      conversation: watson.conversation({
+      conversation: new ConversationV1({
         url: process.env.WATSON_CONVERSATION_API_ROOT,
         username: process.env.WATSON_CONVERSATION_USERNAME,
         password: process.env.WATSON_CONVERSATION_PASSWORD,
-        version_date: process.env.WATSON_CONVERSATION_VERSION_DATE,
+        version_date: ConversationV1.VERSION_DATE_2016_09_20,
         version: 'v1'
       }),
       workspaceId: process.env.WATSON_CONVERSATION_WORKSPACE_ID
