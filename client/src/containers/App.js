@@ -21,8 +21,10 @@ class App extends Component {
     return (
       <div className="app">
         <header>National Parks</header>
-        <section>
+        <section ref="main">
           { this.state.conversationHistory.map((h,i) => this.renderExchange(h, i)) }
+          <div className="exchange" style={{  height: '1px'}}>
+          </div>
         </section>
         <footer>
         { this.renderInputView()}
@@ -78,7 +80,6 @@ class App extends Component {
   onInputKeyUp(e) {
     switch (e.which) {
       case 0x0d:
-        console.log('send message', e);
         this.sendMessage(e.target.value);
         e.target.value = '';
         break;
@@ -98,6 +99,21 @@ class App extends Component {
     });
   }
 
+  componentDidUpdate() {
+    const scrollTo = (element, to, duration) => {
+      if (duration <= 0) return;
+      const difference = to - element.scrollTop;
+      const perTick = difference / duration * 10;
+
+      setTimeout(function () {
+        element.scrollTop += perTick;
+        if (element.scrollTop === to) return;
+        scrollTo(element, to, duration - 10);
+      }, 10);
+    };
+    const node = this.refs.main;
+    scrollTo(node, node.scrollHeight, 300);
+  }
 }
 
 export default App;
