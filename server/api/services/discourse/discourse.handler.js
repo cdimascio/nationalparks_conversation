@@ -18,9 +18,9 @@ export default function discourseHandler(r) {
   //    Set the 'parks' property equal to the array of known park names.
   //    ** Only set the 'parks' property on the first dialog turn.
   //
-  //    HINT: You can get the array of parks by calling, ParksService.all()
+  //    HINT: You can get the array of parks by calling, ParksDatabase.all()
   //    HINT: You can determine the dialog turn by inspecting the system object
-  //    NOTE: ParksService.all() returns a list of parks, not park names
+  //    NOTE: ParksDatabase.all() returns a list of parks, not park names
 
   // 2. STORE THE PARK NAME THAT THE USER IS CURRENTLY ASKING ABOUT
   //    Examine the entities object in the response, r
