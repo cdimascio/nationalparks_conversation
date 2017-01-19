@@ -21,21 +21,34 @@ export default function discourseHandler(r) {
   //    HINT: You can get the array of parks by calling, ParksDatabase.all()
   //    HINT: You can determine the dialog turn by inspecting the system object
   //    NOTE: ParksDatabase.all() returns a list of park objects, not park names
+  //
+  // TO TEST YOUR WORK 
+  // Ask Watson to 'Show me a list of parks' and verify the new parks are there
+  // OR
+  // Use e.g. Chrome Dev Tools to inspect the response payload
 
   // 2. STORE THE PARK NAME THAT THE USER IS CURRENTLY ASKING ABOUT
   //    Examine the entities object in the response, r
   //    If the 'NationalParks' entity is detected, update the context object
   //    to include the property 'park' and set 'park' equal to the value
   //    of the NationalParks entity
+  //
+  // TO TEST YOUR WORK 
+  // Use e.g. Chrome Dev Tools to inspect the response payload
 
-  // 3. RETURN THE PARK OBJECT IN THE RESPONSE PAYLOAD
+  // 3. RETURN THE PARK OBJECT WITH THE RESPONSE PAYLOAD
   //    Examine the intents object in the response, r
   //    If the top intent is the 'tellmeabout' intent, then do the following:
-  //    - Get the output property from the response, r
   //    - Get the 'park' name from the response's context object
-  //    - Create the property, 'park' on the output object and set its value to the park object
+  //    - Add the property, 'park' to the response's output object 
+  //    - Set the value of 'park' to the park object
   //
   //    HINT: You can get the parks object by calling ParksService.byName(parkName);
+  // 
+  // TO TEST YOUR WORK
+  // Ask Watson, "Tell me about Zion"
+  // OR
+  // Use e.g. Chrome Dev Tools to inspect the response payload 
 
   return r;
 }
