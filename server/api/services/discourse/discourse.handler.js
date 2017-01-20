@@ -43,7 +43,7 @@ export default function discourseHandler(r) {
   //    - Add the property, 'park' to the response's output object 
   //    - Set the value of 'park' to the park object
   //
-  //    HINT: You can get the parks object by calling ParksService.byName(parkName);
+  //    HINT: You can get the parks object by calling ParksDatabase.byName(parkName);
   // 
   // TO TEST YOUR WORK
   // Ask Watson, "Tell me about Zion"
