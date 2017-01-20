@@ -1,4 +1,6 @@
+import Rx from 'rx';
 import ParksDatabase from '../parks';
+import WeatherService from '../weather'
 
 export default function discourseHandler(r) {
 
@@ -60,17 +62,31 @@ export default function discourseHandler(r) {
   // Use e.g. Chrome Dev Tools to inspect the response payload 
 
   if (r.intents.length === 0) {
-    return r;
+    return Rx.Observable.just(r);
   }
   
+  const park = r.context.park 
+    ? ParksDatabase.byName(r.context.park)
+    : null;
+
   switch (r.intents[0].intent) {
     case 'tellmeabout':
-      const park = r.context.park;
       if (park) {
-        r.output.park = ParksDatabase.byName(park);
+        r.output.park = park
       }
-      return r;
+      return Rx.Observable.just(r);
+
+    case 'weather':
+      if (park) {
+        return WeatherService
+          .byGeo(park.location.geo.lat, park.location.geo.lon)
+          .map(wr => {
+            r.output.weather = wr.observation;
+            return r;
+          });
+      }
+
     default:
-      return r;
+      return Rx.Observable.just(r);
   }
 }

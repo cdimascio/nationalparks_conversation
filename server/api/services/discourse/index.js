@@ -8,8 +8,7 @@ class DiscourseService {
   }) {
     return Conversation
       .message({input, context})
-      .map(handleDiscourse);
+      .flatMap(handleDiscourse);
   }
 }
-const service = new DiscourseService();
-export default service;
+export default new DiscourseService();
