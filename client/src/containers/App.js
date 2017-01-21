@@ -3,6 +3,7 @@ import Conversation from '../services/conversation';
 import ParkCard from '../components/ParkCard';
 import AnimalsCard from '../components/AnimalsCard';
 import PlantsCard from '../components/PlantsCard';
+import WeatherCard from '../components/WeatherCard';
 import './App.css';
 
 class App extends Component {
@@ -56,6 +57,12 @@ class App extends Component {
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
             <div className="watson-msg"><PlantsCard park={exchange.output.park}/></div>
+          </div>);
+      case 'weather':
+        return (
+          <div key={key} className="exchange">
+            { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
+            <div className="watson-msg"><WeatherCard weather={exchange.output.weather}/></div>
           </div>);
       default:
         this.renderText(exchange,key);
