@@ -6,8 +6,6 @@ The chatbot uses [Watson Conversation](https://console.bluemix.net/catalog/servi
 
 The complete course content and videos lives [here](https://developer.ibm.com/courses/all-courses/chatbots-and-watson-lets-talk-about-national-parks/)
 
-**Enjoy!**
-
 ## A glimpse
 
 ![](https://github.com/cdimascio/nationalparks_conversation/raw/master/.assets/sshot.png)
