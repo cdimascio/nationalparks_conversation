@@ -1,7 +1,14 @@
 # nationalparks-conversation
  
-The repo contains code demonstrating the Watson Conversation service
+**Chatbots and Watson**: Let’s talk about national parks: course source code
 
+The chatbot uses [Watson Conversation](https://console.bluemix.net/catalog/services/conversation?env_id=ibm:yp:us-south&taxonomyNavigation=services), [Weather Company Data](https://console.bluemix.net/catalog/services/weather-company-data?env_id=ibm:yp:us-south&taxonomyNavigation=services), [React](https://facebook.github.io/react/), [Nodejs](https://nodejs.org/en/), and [Bluemix](https://www.bluemix.net) to create a chatbot about National Parks. 
+
+The complete course content and videos lives [here](https://developer.ibm.com/courses/all-courses/chatbots-and-watson-lets-talk-about-national-parks/)
+
+**Enjoy!**
+
+## A glimpse of the app
 
 ![](https://github.com/cdimascio/nationalparks_conversation/raw/master/.assets/sshot.png)
 
