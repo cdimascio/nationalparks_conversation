@@ -43,14 +43,14 @@ Install client and server dependencies
 ## Build / Run (Development)
 - Start the server `npm start`
 - Start the client `cd client && npm start`
-- Navigate to http://localhost:3004
+- Navigate to http://localhost:3000
 
 ## Build / Run (Production)
 - `cd client`
 - `npm run build`
 - `cd ..`
 - `npm start`
-- Navigate to http://localhost:3004
+- Navigate to http://localhost:3000
 
 ## Deploy to Bluemix
 Follow the first 3 steps in the "Build / Run (Production)" section above, then run:
