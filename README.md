@@ -7,13 +7,17 @@ The repo contains code demonstrating the Watson Conversation service
 
 ## Prequisities
 
-
 1. Clone this repo
-2. Create a Watson Conversation Service on Bluemix
-3. Create a new conversation workspace by importing `conversation_workspace.json' form the project root
-4. Create a `.env` file in the project root
+2. Create a Bluemix account
 
-e.g.
+## Setup
+
+### Conversation
+
+- Provision an instance of [Watson Conversation](https://console.bluemix.net/catalog/services/conversation?env_id=ibm:yp:us-south&taxonomyNavigation=services) on Bluemix
+- Create a new conversation workspace by importing `./resources/conversation_workspace.json` into your Watson Conversation workspaces,
+- Install client and server dependencies
+- Create `.env` files in the project root with the following contents
 
 ```
 APP_ID=parks-conversation
@@ -28,10 +32,6 @@ WATSON_CONVERSATION_USERNAME=<USERNAME>
 WATSON_CONVERSATION_PASSWORD=<PASSWORD>
 WATSON_CONVERSATION_WORKSPACE_ID=<WORKSPACE>
 ```
-
-## Setup
-
-Install client and server dependencies
 
 ### Server
 - `npm install`
@@ -56,6 +56,4 @@ Install client and server dependencies
 Follow the first 3 steps in the "Build / Run (Production)" section above, then run:
 
 - `cf push nationalparks`
-
-
 
