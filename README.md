@@ -8,7 +8,7 @@ The complete course content and videos lives [here](https://developer.ibm.com/co
 
 **Enjoy!**
 
-## A glimpse of the app
+## A glimpse
 
 ![](https://github.com/cdimascio/nationalparks_conversation/raw/master/.assets/sshot.png)
 
@@ -41,11 +41,21 @@ WATSON_CONVERSATION_WORKSPACE_ID=<WORKSPACE>
 ```
 
 ### Server
-- `npm install`
+
+Install server dependencies
+
+```shell
+npm install
+```
 
 ### Client
-- `cd client`
-- `npm install`
+
+Install client dependencies
+
+```shell
+cd client
+npm install
+```
 
 ## Build / Run (Development)
 - Start the server `npm start`
@@ -53,14 +63,27 @@ WATSON_CONVERSATION_WORKSPACE_ID=<WORKSPACE>
 - Navigate to http://localhost:3000
 
 ## Build / Run (Production)
-- `cd client`
-- `npm run build`
-- `cd ..`
-- `npm start`
-- Navigate to http://localhost:3000
+
+```shell
+cd client
+npm run build
+cd ..
+npm start
+```
+Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## Deploy to Bluemix
-Follow the first 3 steps in the "Build / Run (Production)" section above, then run:
 
-- `cf push nationalparks`
+#### Prequisites: 
+- Install CloudFoundry Tools
+
+#### Deploy
+Follow the first 3 steps in the "Build / Run (Production)" section above, then run.
+
+```shell
+cf push USER_ID-nationalparks
+```
+Navigate to [https://USER_ID-nationalparks.mybluemix.net](https://USER_ID-nationalparks.mybluemix.net)
+
+
 
