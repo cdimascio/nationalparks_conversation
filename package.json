@@ -22,7 +22,7 @@
     "url": "https://github.com/cdimascio/ballparks_conversation/issues"
   },
   "engines": {
-    "node": ">=7.3.0"
+    "node": ">=8.4.0"
   },
   "homepage": "https://github.com/cdimascio/ballparks_conversation#readme",
   "dependencies": {
@@ -38,5 +38,8 @@
     "rx": "^4.1.0",
     "rx-http-request": "^1.2.0",
     "watson-developer-cloud": "^2.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
   }
 }
