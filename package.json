@@ -1,7 +1,7 @@
 {
-  "name": "ballparks_conversation",
+  "name": "nationalparks_conversation",
   "version": "0.1.0",
-  "description": "Conversations about ballparks",
+  "description": "Conversations about nationalparks",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
