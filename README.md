@@ -85,3 +85,24 @@ Navigate to [https://USER_ID-nationalparks.mybluemix.net](https://USER_ID-nation
 
 
 
+## FAQ
+
+**Q:** In Lab 5: "[Programmatically interact with Watson Conversation](https://developer.ibm.com/courses/all/chatbots-watson-lets-talk-national-parks/?course=begin#3990)", I get an authentication error. What do I do?
+
+**A:**
+This occurs on Windows. Windows sets the `USERNAME` variable to the logged in OS user. Ultimately, it ends up overriding the value for `USERNAME` specified in `.env`. The problem can be solved in two ways:
+
+- on step 3., hard code the `USERNAME` and `PASSWORD`
+  e.g.
+   
+  ```javascript
+  const conversation = new ConversationV1({
+		username: 'your-username',
+		password: 'your-password',
+		version_date: ConversationV1.VERSION_DATE_2016_09_20
+	});
+  ```
+ **or**
+- Rename the `USERNAME` env 
+	- 	Edit `.env`, change `USERNAME` to `NP_USERNAME`
+	- 	in step 3., change `USERNAME` to `NP_USERNAME`
