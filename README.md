@@ -6,6 +6,16 @@ The chatbot uses [Watson Conversation](https://console.bluemix.net/catalog/servi
 
 The complete course content and videos lives [here](https://developer.ibm.com/courses/all-courses/chatbots-and-watson-lets-talk-about-national-parks/)
 
+Try the live demo [here](https://nationalparks.mybluemix.net/)
+
+Ask:
+- which parks can you talk about
+- Tell me about zion
+- What animals live there
+- What's the weather like
+- What animals live at Denali National Park
+- What's the weather like there
+
 ## A glimpse
 
 ![](https://github.com/cdimascio/nationalparks_conversation/raw/master/.assets/sshot.png)
